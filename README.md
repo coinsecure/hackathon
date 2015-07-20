@@ -25,8 +25,7 @@ TESTNET API Documentation https://api.coinsecureis.cool
 
 Need help? [contact support](https://coinsecure.in).
 
-###
 
 ### List of Hacks
 
-Capital Gains by [skarra](https://github.com/skarra)) /coinsecure-sg/
+Capital Gains by [skarra](https://github.com/skarra) /coinsecure-sg/
