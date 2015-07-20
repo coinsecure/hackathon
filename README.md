@@ -49,8 +49,8 @@ Need help? [contact support](https://coinsecure.in).
 
 ### List of Hacks
 
-Capital Gains by [skarra](https://github.com/skarra) /coinsecure-sg/
+- Capital Gains by [skarra](https://github.com/skarra) /coinsecure-sg/
 
 User hosted version can be found here - https://coinsecurecg.appspot.com
 
-Whatsapp trading Bot - Screenshots sumbitted on forums. Source code yet to be submitted.
+- Whatsapp trading Bot - Screenshots sumbitted on forums. Source code yet to be submitted.
