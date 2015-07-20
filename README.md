@@ -25,4 +25,8 @@ TESTNET API Documentation https://api.coinsecureis.cool
 
 Need help? [contact support](https://coinsecure.in).
 
-Coinsecure (@coinsecure)
+###
+
+List of Hacks
+
+> Capital Gains by skarra (@skarra) /coinsecure-sg/
