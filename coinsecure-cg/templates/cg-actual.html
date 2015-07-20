@@ -1,0 +1,143 @@
+{% extends "base.html" %}
+
+{% block base_body %}
+
+<div class="container">
+  <form id="compute_cg_act">
+    <div class="col-xs-6">
+      <label>
+	Coinsecure API Key
+      </label>
+      <input type="text" placeholder="API Key"
+            class="form-control"
+            id="apikey" name="apikey" />
+    </div>
+    <div class="col-xs-2">
+      <label>
+	Date From
+      </label>
+      <input type="text" placeholder="Date" class="form-control"
+	     id="from" name="from" />
+    </div>
+
+    <div class="col-xs-2">
+      <label>
+	Date To
+      </label>
+
+      <input type="text" placeholder="Date" class="form-control"
+	     id="to" name="to" />
+    </div>
+
+    <div class="col-xs-2">
+      <button type="submit" class="btn btn-cs-prim">
+	Compute Gains
+      </button>
+    </div>
+    </form>
+</div>
+
+<hr/>
+{% if error %}
+
+<div class="container">
+<h2>Error</h2>
+
+{{ errmsg }}
+
+</div>
+{% else %}
+
+{% if cgs %}
+
+<div class="container">
+  <h4 class="center-250">Summary for Selected Period</h4><p/><p/>
+  <div class="row">
+    <div class="col-xs-4">
+      <div>
+	<div class="headline-metric-1">
+	  {{ '%0.5f' % (cgs['start_balance'] / 100000000.0) }}
+	</div>
+	<div>Starting Holding (BTC)</div>
+      </div>
+    </div>
+
+    <div class="col-xs-4">
+      <div>
+	<div class="headline-metric-1">
+	  {{ '%.05f' % (cgs['vol'] / 100000000.0) }}
+	</div>
+	<div>Traded Vol (BTC)</div>
+      </div>
+    </div>
+
+    <div class="col-xs-4">
+      <div>
+	<div class="headline-metric-1">
+	  {{ '%.05f' % (cgs['end_balance'] / 100000000.0) }}
+	</div>
+	<div>Closing Holding (BTC)</div>
+      </div>
+    </div>
+
+    <div class="col-xs-4">
+      <div>
+	<div class="headline-metric-3">
+	  {{ '%.02f' % cgs['short_gain'] }}
+	</div>
+	<div>Short Term Gain (INR)</div>
+      </div>
+    </div>
+
+    <div class="col-xs-4">
+      <div>
+	<div class="headline-metric-3">
+	  {{ '%.02f' % cgs['long_gain'] }}
+	</div>
+	<div>Long Term Gain (INR)</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<hr/>
+
+<div class="container">
+  <h4 class="center-250">Sell/Buy FIFO Settlement Log</h4><p/><p/>
+
+  <table id="cgtxns" class="table table-striped table-bordered dataTable" cellspacing="0" width="100%">
+        <thead>
+            <tr>
+                <th>Sell Txn ID</th>
+		<th>Sell Date</th>
+                <th>Buy Txn ID</th>
+                <th>Buy Date</th>
+                <th>Open (BTC)</th>
+                <th>Vol (BTC)</th>
+                <th>Close (BTC)</th>
+                <th>Gain (INR)</th>
+                <th>STG</th>
+            </tr>
+        </thead>
+
+        <tbody>
+        {% for cgtxn in cgs['txn_log'] %}
+            <tr>
+                <td>{{ cgtxn.sell_id }}</td>
+		<td>{{ cgmod.disp_time_from_ts_ms(cgtxn.sell_time) }}</td>
+                <td>{{ cgtxn.buy_id }}</td>
+                <td>{{ cgmod.disp_time_from_ts_ms(cgtxn.buy_time) }}</td>
+                <td>{{ '%.06f' % (cgtxn.open_vol / 100000000.0) }}</td>
+                <td>{{ '%.06f' % (cgtxn.vol / 100000000.0) }}</td>
+                <td>{{ '%.06f' % (cgtxn.close_vol / 100000000.0) }}</td>
+                <td>{{ '%.02f' % (cgtxn.gain) }}</td>
+                <td>{{ cgtxn.stg }} </td>
+            </tr>
+        {% endfor %}
+  </table>
+</div>
+{% endif %}
+{% endif %}
+
+{% endblock %}

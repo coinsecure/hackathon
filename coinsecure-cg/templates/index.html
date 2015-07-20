@@ -1,0 +1,194 @@
+{% extends "base.html" %}
+
+{% block base_body %}
+
+<div class="container main-content">
+  <h2> About </h2>
+
+  <h3> The Background </h3>
+  <div>
+    It is "common wisdom" now that Bitcoin is to be treated as an Asset, and
+    that gains from trading in it be treated as Capital Gains for taxation
+    purposes. This view has support from regulatory pronouncements in
+    countries like Norway, USA etc., and also some pretty solid looking legal
+    advice from a
+    few <a href="http://www.nishithdesai.com/fileadmin/user_upload/pdfs/Research%20Papers/Bitcoins.pdf">leading
+    lawyers who have taken a very deep look</a> at the problem from an
+    India-specific perspective as well.
+  </div>
+
+  <h3> The App </h3>
+  <div>
+    Given the above situation it will be good to have a tool that allows
+    traders to compute their gains / losses from Bitcoin trades, and the
+    resulting Income Tax liability. This is the problem CoinsecureCG aims to
+    do. This app pulls your trades history using the Coinsecure API and
+    compute your Gains. Computing the actual tax burden on the computed Gain
+    is left an exercise for the user.
+  </div> <p/>
+
+  <div>
+    This is my submission for
+    the <a href="https://bitcointalk.org/index.php?topic=1097394.0">July
+    Hackathon</a> run by <a href="https://coinsecure.in">Coinsecure</a>, an
+    Indian Bitcoin exchange. The app is hosted on
+    <a href="/coinsecurecg.appspot.com">Google Appengine</a>, and
+    uses <a href="https://api.coinsecureis.cool/">Coinsecure's API</a> to
+    build useful reports for traders using the Coinsecure Exchange. The code
+    powering this application is open sourced under the Affero GPL v3,
+    and <a href="https://github.com/skarra/coinsecure-cg">available on
+    Github.</a>
+  </div>
+
+  <h3> The Author </h3>
+  <div>
+    My name is <span class="emph">Sriram Karra</span>; you can find more
+    about me on <a href="https://github.com/skarra">Github</a>,
+    <a href="https://plus.google.com/114708180777829794970/about">
+      Google+</a>, <a href="http://in.linkedin.com/in/sriramkarra">
+      LinkedIn</a>, and <a href="http://twitter.com/skarra">
+      Twitter </a>. In short, I have a day job as a Product Manager at
+    <a href="//www.hackerrank.com">an exciting startup</a>. I program for fun
+    in my spare time and recently started dabbling with Bitcoin. You can find
+    me as
+    user <a href="https://bitcointalk.org/index.php?action=profile;u=534145;sa=summary">gowron</a>
+    on <a href="https://bitcointalk.org">Bitcointalk</a>
+  </div>
+
+  <h2> Features </h2>
+  <div>
+    Three main features are available, and can be accessed through the top
+    navigation bar.
+    <ol>
+      <li><a href="/transactions">Transactions</a>: View your transaction
+      history in a neat summary</li>
+
+      <li><a href="/cgActual">Capital Gains - Actual</a>: Find out your
+      Capital Gains for
+      sell transactions in any given date range. This can be useful for
+      computing your tax liability, for e.g.</li>
+
+      <li><a href="/cgProj">Capital Gains - Projection</a>: This is useful to
+      identify your gain and resulting tax liability if you plan to sell part
+      of your holding right now or in the future.</li>
+    </ol>
+
+  </div>
+
+  <h2>What you need</h2>
+  <div>    
+    All features access the Coinsecure testnet instance, you will need an
+    account and an API Key on the testnet
+    instance. <a href="https://coinsecureis.cool">Head over there</a> if you'd
+    like to create a test account and fetch an API Key. At a later time this
+    app may be ported over to use production data from Coinsecure.
+  </div>
+
+  <h2>Frequently Asked Questions</h2>
+  <ol>
+    <li>
+      <div class="question">
+	I got the right API Key from Coinsecure, but it does not work. Why is
+	that?
+      </div>
+
+      <div class="answer">
+	All features access the Coinsecure testnet instance, you will need an
+	account and an API Key on the testnet
+	instance. <a href="https://coinsecureis.cool">Head over there</a> if
+	you'd like to create a test account and fetch an API Key. At a later
+	time this app may be ported over to use production data from
+	Coinsecure.
+      </div>
+    </li>
+
+    <li>
+      <div class="question">
+	I don't have the time to create a new account. Can you just show me
+	how it works?
+      </div>
+
+      <div class="answer">
+	If you use the apikey 'test' (without quotes) the app will pick up
+	some pre-generate randomised dummy data for demo purposes. You can use
+	the test api key in all three tabs of the application.
+      </div>
+    </li>
+
+    <li>
+      <div class="question">
+	How do you compute the Capital Gains?
+      </div>
+
+      <div class="answer">
+	The logic is a simple FIFO based match of the Buy transactions against
+	Sell transactions. In the Capital Gains tabs you will find a detailed
+	list of paired transactions. Note that depending on the actual Buys
+	and Sells, one Sell may get matched to multiple Buys, and one Buy may
+	get matched to more than one Sell txn.
+      </div>
+    </li>
+
+    <li>
+      <div class="question">
+	How do you classify gains as long term or short term?
+      </div>
+
+      <div class="answer">
+	After applying the simple FIFO matching logic if the Sell date for a
+	matched transaction is 3 or more years after the matching Buy
+	transaction, it is considered a Long Term Gain. Otherwise it is taken
+	as a Short Term Gain. This is based on the prevailing tax rules for
+	assets that are not Securities on which STT has been paid.
+      </div>
+    </li>
+
+    <li>
+      <div class="question">
+	Can I change the Threshold to some other value for computing the
+	capital gains?
+      </div>
+
+      <div class="answer">
+	Yes, it is possible, but some manual work is involved. Send an
+	additional GET parameter ltg_threshold=1 by editing the URL in the
+	/cgActual page. But note that you can only specify a single number
+	that denotes years - so you cannot set it to less than one year.
+      </div>
+    </li>
+
+    <li>
+      <div class="question">
+	The CG computation is great, but can I just get the raw data for me to
+	build my own UI?
+      </div>
+
+      <div class="answer">
+	Yes, it is possible, but some manual work is involved. Send an
+	additional GET parameter debug=True by editing the URL in the
+	/cgActual and /cgProj pages.
+      </div>
+    </li>
+
+    <li>
+      <div class="question">
+	What can you tell me about the security / privacy of my trading data?
+      </div>
+
+      <div class="answer">
+	Your API Key, your trades history and such personal information are
+	not stored on the server. The form fields are saved to your browser's
+	localStorage. Some data is tracked for analytics, for e.g. number of
+	different actions performed by a user and stored after doing a
+	double-sha256 of your API Key. In sum, your data is safe. If you are
+	paranoid you can view the source. If you are really paranoid you can
+	host the code yourself on GAE.
+      </div>
+    </li>
+
+  </ol>
+
+  </div>
+
+</div>
+{% endblock %}
