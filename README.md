@@ -27,6 +27,6 @@ Need help? [contact support](https://coinsecure.in).
 
 ###
 
-List of Hacks
+### List of Hacks
 
-Capital Gains by skarra (@skarra) /coinsecure-sg/
+Capital Gains by [skarra](@skarra) /coinsecure-sg/
