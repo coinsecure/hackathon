@@ -8,7 +8,28 @@ We are looking for the 3 best applications that can be built for trading leverag
 
 We are looking at this as an opportunity to further test and refine our API, generate more interest around Bitcoin development and integration.
 
-Rules, etc to be published over the coming days. 
+### Coinsecure Hackathon – 7th July 2015 to 23rd July 2015
+Total Prizes to be given away
+2 BTC – So Far. Extra prizes and a larger prize pool may be announced based on participation.
+50% goes to the winner, the balance is split between 2nd and 3rd as a 60/40 split.
+
+### What can be built?
+- Apps
+- Trading Clients
+- Bots
+- Dashboards
+
+### Entry Criteria
+- Must be Open Source
+- Must utilize the coinsecure.in or coinsecure.info api's.
+
+### Winning Criteria – On a scale of 5
+- Idea & Design (20%)
+- Functionality & Usability (30%)
+- Security & Code Readability(30%)
+- Business Applicability (20%)
+
+### Judges - To be Announced
 
 We have api.coinsecureis.cool and coinsecure.info/docs that can be used.
 
@@ -29,3 +50,7 @@ Need help? [contact support](https://coinsecure.in).
 ### List of Hacks
 
 Capital Gains by [skarra](https://github.com/skarra) /coinsecure-sg/
+
+User hosted version can be found here - https://coinsecurecg.appspot.com
+
+Whatsapp trading Bot - Screenshots sumbitted on forums. Source code yet to be submitted.
