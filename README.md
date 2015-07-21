@@ -53,4 +53,10 @@ Need help? [contact support](https://coinsecure.in).
 
 User hosted version can be found here - https://coinsecurecg.appspot.com
 
-- Whatsapp trading Bot - Screenshots sumbitted on forums. Source code yet to be submitted.
+- Whatsapp trading Bot - Screenshots sumbitted on forums. [IIIIIHIIIII](https://github.com/IIIIIHIIIII/) /WhatBot/
+
+
+- coinsecure-island [basavk](https://github.com/basavk/) /coinsecure-island/
+  
+Demo Video: https://www.youtube.com/watch?v=kKhlpmUn7fI
+
