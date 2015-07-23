@@ -61,7 +61,9 @@ Demo Video: https://www.youtube.com/watch?v=kKhlpmUn7fI
 
 - BitU - Web Dashboard bor Bit-Coin exchange [jayanthchandra](https://github.com/jayanthchandra/) /BitU/
 
-Team - Jayanth Chandra, Vaishak Prashanth, Srinidhi BS, Vivek Chettiar 
+- BitU-Android  /BitU-Android/
+
+BitU Team - Jayanth Chandra, Vaishak Prashanth, Srinidhi BS, Vivek Chettiar 
 
 
 
