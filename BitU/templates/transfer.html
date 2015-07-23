@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>My Account</title>
+    <link href="css/materialize.css" rel="stylesheet">
+    <link href="css/materialize.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:400,700' rel='stylesheet' type='text/css'>
+     <script src="js/jquery.js"></script>
+    <script src="js/materialize.js"></script>
+<ul id="nav-mobile" class="side-nav fixed teal" style="width: 240px; position:fixed;"><button  onclick="window.location = '/';" class = "btn-large waves-effect waves-light teal full-width-for-button height-correct" style="color:white; text-align:left;">Hello, John</button><button class = "btn-large waves-effect waves-light full-width-for-button bluee" style="text-align:left;" onclick="window.location = '/balance';" >My Account</button><button onclick="window.location = '/transfer';" class = "btn-large waves-effect waves-light full-width-for-button bluee" style="text-align:left;" >Transfer BTC</button><button onclick="window.location = '/bid';" class = "btn-large waves-effect waves-light full-width-for-button bluee" style="text-align:left;" >Bids</button><button class = "btn-large waves-effect waves-light full-width-for-button bluee" style="text-align:left;" onclick="window.location = '/pay';">Pay with BTC</button></ul>
+  </head>
+<body style="margin-left:240px; background-image: url('images/bg.jpg');">
+      <div class="card" style="margin-left:10px; width:98%; opacity:0.9;">
+         <h3 style="margin-left:20px;">BitU Transfer</h3>
+         
+      </div>
+  <div class="row" style="width:100%;">
+    <div class="col s12">
+      <ul class="tabs">
+        <li class="tab col s3"><a class="active" href="#test1">Transfer</a></li>
+        <li class="tab col s3"><a class="active" href="#test2">Transfer To Contact</a></li>
+        <li class="tab col s3"><a  class="active"href="#test4">Pending</a></li>
+      </ul>
+    </div>
+  
+    <div id="test1" class="col s12" ><br> 
+      <div class="row">
+          <form class="col s12">
+              <div class="row" style="color:white;">
+                  <div class="input-field col s6">
+                    <input id="wallet_id" type="text" class="validate">
+                    <label for="wallet_id" >Wallet ID</label>
+                  </div>
+                  <div class="input-field col s6 ">
+                    <input id="bitcoin_no" type="number" class="validate">
+                      <label for="bitcoin_no">BitCoins</label>
+                  </div>
+              </div>  
+      </div>
+      
+      <button class="btn-large waves-effect waves green btn-height-correct" style="width:99%; margin-left:10px;">Transfer !</button>
+      </form>
+      </div>
+      
+   
+
+    <div id="test2" class="col s12" ><br> 
+      <div class="row">
+          <form class="col s12">
+              <div class="row" style="color:white;">
+                  <div class="input-field col s6">
+                    <input id="wallet_id" type="text" class="validate">
+                    <label for="wallet_id" >Contact Username</label>
+                  </div>
+                  <div class="input-field col s6 ">
+                    <input id="bitcoin_no" type="number" class="validate">
+                      <label for="bitcoin_no">BitCoins</label>
+                  </div>
+              </div>  
+      </div>
+      
+      <button class="btn-large waves-effect waves green btn-height-correct" style="width:99%; margin-left:10px;">Transfer !</button>
+      </form>
+      </div>
+    <div id="test4" class="col s12">Test 4</div>
+    </div>
+      
+  </body>
+</html>

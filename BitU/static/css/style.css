@@ -1,0 +1,68 @@
+ .input-field input[type=text].valid {
+     border-bottom: 1px solid #ffeb3b;
+     box-shadow: 0 1px 0 0 #ffeb3b;
+   }
+      .input-field label {
+     color: #ffeb3b;
+   }
+   /* label focus color */
+   .input-field input[type=text]:focus + label {
+     color: #ffeb3b;
+   }
+   /* label underline focus color */
+   .input-field input[type=text]:focus {
+     border-bottom: 1px solid #ffeb3b;
+     box-shadow: 0 1px 0 0 #ffeb3b;
+   }
+   .input-field input[type=text]{
+     border-bottom: 1px solid #ffeb3b;
+     box-shadow: 0 1px 0 0 #ffeb3b;
+   }
+   .input-field input[type=number]{
+     border-bottom: 1px solid #ffeb3b;
+     box-shadow: 0 1px 0 0 #ffeb3b;
+   }
+   .input-field input[type=number].valid {
+     border-bottom: 1px solid #ffeb3b;
+     box-shadow: 0 1px 0 0 #ffeb3b;
+   }
+      .input-field label {
+     color: #ffeb3b;
+   }
+   .bluee{
+    background-color:#1976d2;
+    height : 80px;
+    -moz-border-radius: 0px;
+-webkit-border-radius: 0px;
+border-radius: 0px;
+   }
+   .height-correct{
+    height:80px;
+   }
+   .btn-height-correct{
+    height:60px;
+   }
+   .table-cell{
+    height: 40px;
+    font-size: 120%;
+    text-align: center;
+   }
+   .padd{
+    margin-left:20px;
+   }
+   .cntr{
+    text-align: center;
+   }
+   .table-head{
+    height:60px;
+    font-size: 120%;
+   }
+   /* label focus color */
+   .input-field input[type=number]:focus + label {
+     color: #ffeb3b;
+   }
+   /* label underline focus color */
+   .input-field input[type=number]:focus {
+     border-bottom: 1px solid #ffeb3b;
+     box-shadow: 0 1px 0 0 #ffeb3b;
+   }

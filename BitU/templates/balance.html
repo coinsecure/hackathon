@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>HackIndia BitTransfer</title>
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:400,700' rel='stylesheet' type='text/css'>
+    
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/materialize.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/materialize.min.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/ionicons.css') }}" />
+    
+     <script src="js/jquery.js"></script>
+    <script src="js/materialize.js"></script>
+     <ul id="nav-mobile" class="side-nav fixed teal" style="width: 240px; position:fixed;"><button  onclick="window.location = '/';" class = "btn-large waves-effect waves-light teal full-width-for-button height-correct" style="color:white; text-align:left;">Hello, John</button><button class = "btn-large waves-effect waves-light full-width-for-button bluee" style="text-align:left;" onclick="window.location = '/balance';" >My Account</button><button onclick="window.location = '/transfer';" class = "btn-large waves-effect waves-light full-width-for-button bluee" style="text-align:left;" >Transfer BTC</button><button onclick="window.location = '/bid';" class = "btn-large waves-effect waves-light full-width-for-button bluee" style="text-align:left;" >Bids</button><button class = "btn-large waves-effect waves-light full-width-for-button bluee" style="text-align:left;" onclick="window.location = '/pay';">Pay with BTC</button></ul>
+  </head>
+<body style="margin-left:240px; background-image: url('images/bg.jpg');">
+      <div class="card" style="margin-left:10px; width:98%; opacity:0.9">
+         <h3 style="margin-left:20px;">My BitU</h3>
+      </div>
+       <div class="row" >
+        <div class="col s12 m4">
+          <div class="card" style="opacity:0.9;">
+            <div class="card-image" style="margin-left:42%; padding-top:20px; ">
+     
+              <i class="icon ion-social-bitcoin large"></i>
+              
+            </div>
+            <div class="card-content" style="text-align:center">
+              <h4>BitCoin Balance</h4>
+            </div>
+            <div class="card-action" style="text-align:center">
+              <a href="#">{{coin_balance}}</a>
+            </div>
+          </div>
+        </div>
+     <div class="col s12 m4">
+          <div class="card" style="opacity:0.9;">
+            <div class="card-image" style="margin-left:39.5%; padding-top:20px;">
+     
+              <i class="icon ion-lock-combination large"></i>
+              
+            </div>
+            <div class="card-content" style="text-align:center">
+              <h4>BitCoin Address</h4>
+            </div>
+
+            <div class="card-action" style="text-align:center">
+            {% for a in add %}
+              <a href="#">{{a}}</a>
+            {% endfor %}
+            </div>
+          </div>
+        </div>
+       <div class="col s12 m4">
+          <div class="card" style="opacity:0.9;">
+            <div class="card-image" style="margin-left:40%; padding-top:20px;">
+     
+              <i class="icon ion-cash large"></i>
+              
+            </div>
+            <div class="card-content" style="text-align:center">
+              <h4>BitCoin Bids</h4>
+            </div>
+            <div class="card-action" style="text-align:center">
+              <a href="#">{{coin_bids}}</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+      
+      
+  </body>
+</html>

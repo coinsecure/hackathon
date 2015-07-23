@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>BitU</title>
+   
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/materialize.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/materialize.min.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/ionicons.css') }}" />
+    
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:400,700' rel='stylesheet' type='text/css'>
+     <script src="js/jquery.js"></script>
+    <script src="js/materialize.js"></script>
+  <ul id="nav-mobile" class="side-nav fixed teal" style="width: 240px; position:fixed;"><button  onclick="window.location = '/';" class = "btn-large waves-effect waves-light teal full-width-for-button height-correct" style="color:white; text-align:left;">Hello, John</button><button class = "btn-large waves-effect waves-light full-width-for-button bluee" style="text-align:left;" onclick="window.location = '/balance';" >My Account</button><button onclick="window.location = '/transfer';" class = "btn-large waves-effect waves-light full-width-for-button bluee" style="text-align:left;" >Transfer BTC</button><button onclick="window.location = '/bid';" class = "btn-large waves-effect waves-light full-width-for-button bluee" style="text-align:left;" >Bids</button><button class = "btn-large waves-effect waves-light full-width-for-button bluee" style="text-align:left;" onclick="window.location = '/pay';">Pay with BTC</button></ul>
+  </head>
+<body style="margin-left:240px; background-image: url('images/bg.jpg');">
+      <div class="card" style="margin-left:10px; width:98%; opacity:0.9;">
+         <h3 style="margin-left:20px;">BitU Bids</h3>
+      </div>
+     <div class="row" >
+        <div class="col s12 m4">
+          <div class="card" style="opacity:0.9;">
+            <div class="card-image" style="margin-left:37.5%;">
+     
+              <i class="icon ion-arrow-graph-up-right large"></i>
+              
+            </div>
+            <div class="card-content" style="text-align:center">
+              <h4>Rate</h4>
+            </div>
+            <div class="card-action" style="text-align:center">
+                <ul class="collection">
+                {% for r in rate %}
+      <li class="collection-item">{{ r }}</li>
+      {% endfor %}
+    </ul>
+            
+            </div>
+          </div>
+        </div>
+     <div class="col s12 m4">
+          <div class="card" style="opacity:0.9;">
+            <div class="card-image" style="margin-left:37.5%;">
+     
+              <i class="icon ion-arrow-graph-down-right large"></i>
+              
+            </div>
+            <div class="card-content" style="text-align:center">
+              <h4>Volume</h4>
+            </div>
+            <div class="card-action" style="text-align:center">
+                <ul class="collection">
+                {% for v in volume %}
+      <li class="collection-item">{{v}}</li>
+      {% endfor %}
+    </ul>
+            
+            </div>
+          </div>
+        </div>
+       <div class="col s12 m4">
+          <div class="card" style="opacity:0.9;">
+            <div class="card-image" style="margin-left:40%;">
+     
+              <i class="icon ion-ios-pulse large"></i>
+              
+            </div>
+            <div class="card-content" style="text-align:center">
+              <h4>Sum</h4>
+            </div>
+            <div class="card-action" style="text-align:center">
+                <ul class="collection">
+       {% for s in sumi %}
+      <li class="collection-item">{{s}}</li>
+      {% endfor %}
+    </ul>
+            
+            </div>
+          </div>
+        </div>
+
+      </div>
+  </body>
+</html>

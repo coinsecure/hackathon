@@ -1,0 +1,40 @@
+ .input-field input[type=text].valid {
+     border-bottom: 1px solid #1976d2;
+     box-shadow: 0 1px 0 0 #1976d2;
+   }
+      .input-field label {
+     color: #1976d2;
+   }
+   /* label focus color */
+   .input-field input[type=text]:focus + label {
+     color: #1976d2;
+   }
+   /* label underline focus color */
+   .input-field input[type=text]:focus {
+     border-bottom: 1px solid #1976d2;
+     box-shadow: 0 1px 0 0 #1976d2;
+   }
+   .input-field input[type=text]{
+     border-bottom: 1px solid #1976d2;
+     box-shadow: 0 1px 0 0 #1976d2;
+   }
+   .input-field input[type=number]{
+     border-bottom: 1px solid #1976d2;
+     box-shadow: 0 1px 0 0 #1976d2;
+   }
+   .input-field input[type=number].valid {
+     border-bottom: 1px solid #1976d2;
+     box-shadow: 0 1px 0 0 #1976d2;
+   }
+      .input-field label {
+     color: #1976d2;
+   }
+   /* label focus color */
+   .input-field input[type=number]:focus + label {
+     color: #1976d2;
+   }
+   /* label underline focus color */
+   .input-field input[type=number]:focus {
+     border-bottom: 1px solid #1976d2;
+     box-shadow: 0 1px 0 0 #1976d2;
+   }
