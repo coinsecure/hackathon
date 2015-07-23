@@ -55,8 +55,13 @@ User hosted version can be found here - https://coinsecurecg.appspot.com
 
 - Whatsapp trading Bot - Screenshots sumbitted on forums. [IIIIIHIIIII](https://github.com/IIIIIHIIIII/) /WhatBot/
 
-
 - coinsecure-island [basavk](https://github.com/basavk/) /coinsecure-island/
   
 Demo Video: https://www.youtube.com/watch?v=kKhlpmUn7fI
+
+- BitU - Web Dashboard bor Bit-Coin exchange [jayanthchandra](https://github.com/jayanthchandra/) /BitU/
+
+Team - Jayanth Chandra, Vaishak Prashanth, Srinidhi BS, Vivek Chettiar 
+
+
 
