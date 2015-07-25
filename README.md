@@ -65,5 +65,8 @@ Demo Video: https://www.youtube.com/watch?v=kKhlpmUn7fI
 
 BitU Team - Jayanth Chandra, Vaishak Prashanth, Srinidhi BS, Vivek Chettiar 
 
+- coinsecure-island [ani4444](https://github.com/ani4444/) /theStrategist/
+  
+Bot Details: The Bot is based on Coinsecure Testnet and an API from https://coinsecureis.cool/api is required to trade with the bot.
 
 
