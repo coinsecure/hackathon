@@ -1,0 +1,30 @@
+secret mnemonic - alcohol royal alarm found ginger filter text citizen market desk swear shrimp
+pin - hooli123
+
+ sqlite3 data.sqlite
+SQLite version 3.8.6 2014-08-15 11:46:33
+Enter ".help" for usage hints.
+sqlite> show tables;
+Error: near "show": syntax error
+sqlite> desc tables;
+Error: near "desc": syntax error
+sqlite> SELECT name FROM sqlite_master WHERE type='table';
+user
+shake
+sqlite> desc user;
+Error: near "desc": syntax error
+sqlite> .schema user
+CREATE TABLE user (
+	user_id INTEGER NOT NULL, 
+	api_key VARCHAR(200), 
+	secret VARCHAR(200), 
+	PRIMARY KEY (user_id)
+);
+sqlite> insert into user values(1, '47d3-6b6f-2c49-69c9', 'hooli123');
+sqlite> select * from user;
+1|47d3-6b6f-2c49-69c9|hooli123
+
+
+
+localhost:12341/shake?user_id=1&location=1&amount=0.00002
+localhost:12341/shake?user_id=2&location=1

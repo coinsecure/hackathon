@@ -1,0 +1,34 @@
+<html>
+	<head>
+		<title>Bitcoin transfer</title>
+		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+		<script src="{{ url_for('static', filename='shake.js') }}"></script>
+		<script src="{{ url_for('static', filename='myjs.js') }}"></script>
+	</head>
+	<div id="user_id_div">
+		<input type="text" placeholder="Enter user id" id="user_id"/>
+		<button id="submit">Submit</button>	
+	</div>
+	<br/>
+	<div id="loading_balance" style="display:none">
+		Loading....
+	</div>
+	<br/>
+	<div id="others" style="display: none">
+
+		Your balance is <span id="balance"></span> BTC.  
+		<br>
+		Total price value of these bitcoins as per last selling price on CoinSecure is <span id="total_cost"></span> INR.
+		<br>
+		Amount : <input type="text" placeholder="Enter amt. to send" id="amount"/>
+		<br>
+		<br>
+		Please shake the phone to start transfer
+	</div>
+	<br>
+	<div id="loading_response" style="display:none">
+		Loading....
+	</div>
+	<div id="response" style="display:none">
+	</div>
+</html>

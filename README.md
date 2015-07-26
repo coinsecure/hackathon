@@ -65,8 +65,17 @@ Demo Video: https://www.youtube.com/watch?v=kKhlpmUn7fI
 
 BitU Team - Jayanth Chandra, Vaishak Prashanth, Srinidhi BS, Vivek Chettiar 
 
-- coinsecure-island [ani4444](https://github.com/ani4444/) /theStrategist/
+- theStrategist [ani4444](https://github.com/ani4444/) /theStrategist/
   
 Bot Details: The Bot is based on Coinsecure Testnet and an API from https://coinsecureis.cool/api is required to trade with the bot.
+
+- shakepay [manojpandey](https://github.com/manojpandey/) /shakepay/
+  
+ ShakePay allows you to make bitcoin transactions by just your phone with a shake.    
+
+- hackdelhi-books [botraunak](https://github.com/botraunak/) /hackdelhi-books/
+  
+Book Management for Universities. Pay for Books with Bitcoin.
+
 
 
