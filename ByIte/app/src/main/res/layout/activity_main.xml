@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="25dp"
+    android:background="@drawable/back">
+
+    <ImageButton
+        android:layout_width="340dp"
+        android:layout_height="140dp"
+        android:id="@+id/ib1"
+        android:background="@drawable/shopping"
+        android:layout_marginBottom="10dp"/>
+    <ImageButton
+        android:layout_width="340dp"
+        android:layout_height="140dp"
+        android:id="@+id/ib2"
+        android:layout_below="@+id/ib1"
+        android:background="@drawable/kits"
+        android:layout_marginBottom="10dp"/>
+    <ImageButton
+        android:layout_width="340dp"
+        android:layout_height="140dp"
+        android:id="@+id/ib3"
+        android:layout_below="@+id/ib2"
+        android:background="@drawable/bito"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="By Team: Public Static Void Main"
+        android:id="@+id/emit"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="45dp"
+    android:paddingRight="45dp"
+    android:paddingTop="40dp"
+    android:background="@drawable/poi">
+
+    <ImageButton
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:id="@+id/s1"
+        android:background="@drawable/roundbt"
+        android:src="@drawable/ping"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv1"
+        android:text="Indoors"
+        android:typeface="monospace"
+
+        android:textAlignment="center"
+        android:layout_below="@+id/s1"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="27dp"/>
+
+    <ImageButton
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:id="@+id/s2"
+        android:background="@drawable/roundbt"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/football"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv2"
+        android:typeface="monospace"
+
+        android:layout_marginRight="21dp"
+        android:text="Outdoors"
+        android:textAlignment="center"
+        android:layout_below="@+id/s2"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="50dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.kritiketansharma.byite" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".shop"
+            android:label="@string/title_activity_shop" >
+        </activity>
+        <activity
+            android:name=".pay"
+            android:label="@string/title_activity_pay" >
+        </activity>
+        <activity
+            android:name=".know"
+            android:label="@string/title_activity_pay" >
+        </activity>
+        <activity
+            android:name=".scan"
+            android:label="@string/title_activity_scan" >
+        </activity>
+        <activity
+            android:name=".foot"
+            android:label="@string/title_activity_foot" >
+        </activity>
+        <activity
+            android:name=".books"
+            android:label="@string/title_activity_books" >
+        </activity>
+        <activity
+            android:name=".electro"
+            android:label="@string/title_activity_electro" >
+        </activity>
+        <activity
+            android:name=".appa"
+            android:label="@string/title_activity_appa" >
+        </activity>
+        <activity
+            android:name=".access"
+            android:label="@string/title_activity_access" >
+        </activity>
+        <activity
+            android:name=".sports"
+            android:label="@string/title_activity_sports" >
+        </activity>
+        <activity
+            android:name=".filter"
+            android:label="@string/title_activity_filter" >
+        </activity>
+        <activity
+            android:name=".BeaconActivity"
+            android:label="@string/title_activity_beacon"
+            android:launchMode="singleInstance" >
+        </activity>
+        <activity
+            android:name=".QRCodeActivity"
+            android:label="@string/title_activity_qrcode" >
+        </activity>
+        <activity
+            android:name=".EmitterActivity"
+            android:label="@string/title_activity_emitter" >
+        </activity>
+        <activity
+            android:name=".trade"
+            android:label="@string/title_activity_trade" >
+        </activity>
+    </application>
+
+</manifest>

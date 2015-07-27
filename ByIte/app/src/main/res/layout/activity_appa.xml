@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="45dp"
+    android:paddingRight="45dp"
+    android:paddingTop="40dp"
+    android:background="@drawable/mar">
+
+    <ImageButton
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:id="@+id/ap1"
+        android:background="@drawable/roundbt"
+        android:src="@drawable/t"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv1"
+        android:text="Casual"
+        android:typeface="monospace"
+        android:textColor="#ffffff"
+        android:textAlignment="center"
+        android:layout_below="@+id/ap1"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="30dp"/>
+
+    <ImageButton
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:id="@+id/ap2"
+        android:background="@drawable/roundbt"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/shirt"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv2"
+        android:typeface="monospace"
+        android:textColor="#ffffff"
+        android:layout_marginRight="29dp"
+        android:text="Formal"
+        android:textAlignment="center"
+        android:layout_below="@+id/ap2"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="50dp"/>
+
+    <ImageButton
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:id="@+id/ap3"
+        android:background="@drawable/roundbt"
+        android:layout_below="@+id/tv1"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/spo"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:typeface="monospace"
+        android:textColor="#ffffff"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/tv3"
+        android:text="Sports"
+        android:textAlignment="center"
+        android:layout_below="@+id/ap3"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="50dp"/>
+
+</RelativeLayout>

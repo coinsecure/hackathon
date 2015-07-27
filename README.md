@@ -77,5 +77,14 @@ Bot Details: The Bot is based on Coinsecure Testnet and an API from https://coin
   
 Book Management for Universities. Pay for Books with Bitcoin.
 
+- ByIte /ByIte/
+
+Team Public Static Void Main - Kritiketan Sharma, Yogesh Gogia, Abhishek Rawat
+ByIte is based on giving a fresh outlook to E-Commerce, Shopping,  Scan, BitCoins Accepted Here
+
+- crowdalert-hackdelhi [akshatmittal](https://github.com/akshatmittal/) /crowdalert-hackdelhi/
+  
+Crowd Alert is a population density management system in public places such as metros and busses. The system shows the current number of people in particular coach and/or bus, and also shows when it is arriving at a station and from where you should board so that you face minimum hassle and crowd with maximum convenience. Pay via Bitcoin for your card recharges for paying fares for Metro or any public transport.
+
 
 

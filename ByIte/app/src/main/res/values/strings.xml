@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Byite</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_shop">shop</string>
+    <string name="title_activity_pay">pay</string>
+    <string name="title_activity_scan">scan</string>
+    <string name="title_activity_foot">foot</string>
+    <string name="title_activity_books">books</string>
+    <string name="title_activity_electro">electro</string>
+    <string name="title_activity_appa">appa</string>
+    <string name="title_activity_access">access</string>
+    <string name="title_activity_sports">sports</string>
+    <string name="title_activity_filter">filter</string>
+    <string name="title_activity_beacon">BeaconActivity</string>
+    <string name="title_activity_qrcode">QRCodeActivity</string>
+    <string name="title_activity_emitter">EmitterActivity</string>
+    <string name="title_activity_trade">trade</string>
+</resources>
